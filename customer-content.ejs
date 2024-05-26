@@ -1,0 +1,10 @@
+<h1><%= customer.name %></h1>
+<p>Contact: <%= customer.contact %></p>
+<h2>Interaction History</h2>
+<ul>
+    <% customer.history.forEach(interaction => { %>
+        <li><%= interaction %></li>
+    <% }); %>
+</ul>
+<h2>Notes</h2>
+<p><%= customer.notes %></p>
